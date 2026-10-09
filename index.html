@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For My Sama ❤️</title>
+
+  <link rel="stylesheet" href="stayle.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div id="hearts-background" class="hearts-background"></div>
+
+  <!-- ========== PASSWORD PAGE ========== -->
+  <section id="password-screen" class="screen">
+    <div class="card password-card">
+      <div class="big-heart">💗</div>
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+      <h1>اكتبي الباسورد يا جاموسه</h1>
+
+      <p class="description">
+        There's a little world made just for you.
+        Enter our secret password to open it. ❤️ (يارب يطمر فيكي)
+      </p>
+
+      <form id="password-form">
+        <!-- PASSWORD: Change it in script.js too -->
+        <input
+          id="password-input"
+          type="password"
+          placeholder="Our secret password..."
+          autocomplete="off"
+          required
+        >
+
+        <button type="submit" class="primary-button">
+          Open My Heart 💌
+        </button>
+      </form>
+
+      <p id="password-error" class="error-message"></p>
+    </div>
+  </section>
+
+
+  <!-- ========== QUIZ PAGE ========== -->
+  <section id="quiz-screen" class="screen hidden">
+    <div class="card quiz-card">
+      <div class="big-heart">💕</div>
+      <p class="eyebrow">A LITTLE TEST OF LOVE</p>
+
+      <h1>How well do you know us?</h1>
+
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <p id="question-number" class="question-number"></p>
+      <h2 id="question-text"></h2>
+
+      <div id="answers-container" class="answers-container"></div>
+
+      <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+
+      <button id="next-button" class="primary-button hidden" type="button">
+        Next Question ❤️
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ========== MAIN WEBSITE ========== -->
+  <main id="surprise-content" class="hidden">
+
+    <!-- PAGE 1: HERO -->
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">TO MY FAVORITE PERSON</p>
+
+        <!-- CHANGE SAMA'S NAME HERE -->
+        <h1>Happy Birthday,<br>
+          <span>My Beautiful Soso</span> 💗
+        </h1>
+
+        <p class="description">
+          Eight years of memories, a million reasons to love you,
+          and a lifetime I'd still choose with you.
+        </p>
+
+        <a href="#love-letter" class="primary-button link-button">
+          Open Your Letter 💌
+        </a>
+
+        <p class="scroll-hint">There's more waiting for you ↓</p>
+      </div>
+    </section>
+
+
+    <!-- PAGE 2: RELATIONSHIP COUNTER -->
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE FOREVER</p>
+        <h2>Our Story So Far 💞</h2>
+        <p>Every second with you is a memory worth keeping.</p>
+      </div>
+
+      <div class="counter-card">
+        <div class="counter-item">
+          <strong id="days">0</strong>
+          <span>Days</span>
+        </div>
+
+        <div class="counter-item">
+          <strong id="hours">00</strong>
+          <span>Hours</span>
+        </div>
+
+        <div class="counter-item">
+          <strong id="minutes">00</strong>
+          <span>Minutes</span>
+        </div>
+
+        <div class="counter-item">
+          <strong id="seconds">00</strong>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+      <p class="center-text">And I'm still falling for you. ❤️</p>
+    </section>
+
+
+    <!-- PAGE 3: LOVE LETTER -->
+    <section id="love-letter" class="section">
+      <div class="letter-card">
+        <p class="eyebrow">WORDS FROM MY HEART</p>
+        <h2>To My Soso, My Home 💌</h2>
+
+        <!-- EDIT YOUR LOVE LETTER HERE -->
+        <p>
+          My love, I don't think words will ever be enough to explain
+          how much you mean to me.
+        </p>
+
+        <p>
+          We've shared so many days, so many conversations, and so many
+          little moments that became a part of who I am.
+          You're still the person I want to tell my stories to,
+          laugh with, and build my future beside.
+        </p>
+
+        <p>
+          I hope this new year of your life brings you all the happiness
+          your heart deserves. I hope I can always be one of the reasons
+          behind your smile.
+        </p>
+
+        <p>
+          If I had to choose again, I'd still choose you.
+          Every single time. In every life. ❤️
+        </p>
+
+        <h3>Forever yours, with all my love. 💗</h3>
+      </div>
+    </section>
+
+
+    <!-- PAGE 4: TEN PHOTOS -->
+    <section id="memories" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LITTLE PIECES OF FOREVER</p>
+        <h2>Our Memories </h2>
+        <p>Ten little windows into our story together.</p>
+      </div>
+
+      <div class="photo-gallery">
+
+        <!-- PHOTO 1: Replace the file in assets/images/photo-1.jpg -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-1.jpeg" alt="Our memory 1">
+          <figcaption>My favorite kind of happiness ❤️</figcaption>
+        </figure>
+
+        <!-- PHOTO 2 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-2.jpeg" alt="Our memory 2">
+          <figcaption>You make life more beautiful 💕</figcaption>
+        </figure>
+
+        <!-- PHOTO 3 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-3.jpeg" alt="Our memory 3">
+          <figcaption>A moment I'll always keep 💗</figcaption>
+        </figure>
+
+        <!-- PHOTO 4 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-4.jpeg" alt="Our memory 4">
+          <figcaption>My person, always 🥹</figcaption>
+        </figure>
+
+        <!-- PHOTO 5 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-5.jpeg" alt="Our memory 5">
+          <figcaption>Just you and me 💞</figcaption>
+        </figure>
+
+        <!-- PHOTO 6 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-6.jpeg" alt="Our memory 6">
+          <figcaption>One for the memories 🌷</figcaption>
+        </figure>
+
+        <!-- PHOTO 7 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-7.jpeg" alt="Our memory 7">
+          <figcaption>My favorite smile ❤️</figcaption>
+        </figure>
+
+        <!-- PHOTO 8 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-8.jpeg" alt="Our memory 8">
+          <figcaption>Another reason to be grateful 💖</figcaption>
+        </figure>
+
+        <!-- PHOTO 9 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-9.jpeg" alt="Our memory 9">
+          <figcaption>And a million moments more ✨</figcaption>
+        </figure>
+
+        <!-- PHOTO 10 -->
+        <figure class="photo-card">
+          <img src="assets/images/photo-10.jpeg" alt="Our memory 10">
+          <figcaption>Our story is still being written 💍</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- PAGE 5: REASONS I LOVE YOU -->
+    <section id="reasons" class="section reasons-section">
+      <div class="reasons-card">
+        <p class="eyebrow">A LITTLE SECRET FOR YOU</p>
+        <h2>10 Reasons Why I Love You 💗</h2>
+
+        <p class="description">
+          There are a million reasons, but let's start with these...
+        </p>
+
+        <div id="reason-display" class="reason-display">
+          <span class="reason-heart">💖</span>
+          <p id="reason-counter">Reason 1 of 10</p>
+          <h3 id="reason-text">Your beautiful smile.</h3>
+        </div>
+
+        <button id="reason-button" class="primary-button" type="button">
+          Tell Me Another 💕
+        </button>
+
+        <p id="reason-ending" class="reason-ending hidden">
+          And the biggest reason of all?<br>
+          <strong>Because you're YOU. And that's everything. ❤️</strong>
+        </p>
+      </div>
+    </section>
+
+
+    <!-- FINAL PAGE -->
+    <section class="final-section section">
+      <div class="big-heart">❤️</div>
+      <p class="eyebrow">ONE LAST THING</p>
+
+      <h2>You're My Favorite Part of Life.</h2>
+
+      <p>
+       💗 مفيش اي حاجه فالدنيا تكفي معزتك عندي ولا في كلام يوصف حبي ليكي انتي كل حاجه في وكل اللي بتمناه اني اكون معاكي و ديما اخليكي مبسوطه
+      </p>
+
+      <h1>كل سنه وانتي طيبه يا كل حاجه ليا💗</h1>
+
+      <p class="signature">Made with all my love, just for you.</p>
+    </section>
+
+  </main>
+
+
+  <!-- SONG: Put your MP3 in assets/audio/our-song.mp3 -->
+  <audio id="our-song" src="assets/audio/our-song.mp3" loop preload="auto"></audio>
+
+  <button id="music-button" class="music-button hidden" type="button">
+    🔊 Music
+  </button>
+
+  <footer>Made with ❤️ for Soso</footer>
+
+</body>
+</html>
